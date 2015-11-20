@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="rival.com.changecolorindicater.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp">
+
+        <rival.com.changecolorindicater.views.ChangeColorIconWithText
+            android:id="@+id/cciw_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:color_chose="#fb49a3cc"
+            app:image_default="@drawable/image_taobao_loginaty"
+            app:mode_change="alpha"
+            app:mode_chose="color"
+            app:text="淘宝网"
+            app:text_size="14sp" />
+
+        <rival.com.changecolorindicater.views.ChangeColorIconWithText
+            android:id="@+id/cciw_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:color_chose="#fbb849cc"
+            app:image_default="@drawable/image_weibo_loginaty"
+            app:mode_change="alpha"
+            app:mode_chose="color"
+            app:text="微博啊"
+            app:text_size="14sp" />
+
+        <rival.com.changecolorindicater.views.ChangeColorIconWithText
+            android:id="@+id/cciw_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:image_chose="@drawable/button_community_select"
+            app:image_default="@drawable/button_community_normal"
+            app:mode_change="clip"
+            app:mode_chose="image"
+            app:text="社区啊"
+            app:text_size="14sp" />
+
+        <rival.com.changecolorindicater.views.ChangeColorIconWithText
+            android:id="@+id/cciw_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            app:image_chose="@drawable/button_user_select"
+            app:image_default="@drawable/button_user_normal"
+            app:mode_change="clip"
+            app:mode_chose="image"
+            app:text="社区啊"
+            app:text_size="14sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mode_chose">
+        <enum name="color" value="0" />
+        <enum name="image" value="1" />
+    </attr>
+    <attr name="mode_change">
+        <enum name="alpha" value="0"/>
+        <enum name="clip"  value="1"/>
+    </attr>
+    <attr name="image_default" format="reference"/>
+    <attr name="image_chose" format="reference"/>
+    <attr name="color_chose" format="color"/>
+    <attr name="text" format="string"/>
+    <attr name="text_size" format="dimension"/>
+
+    <declare-styleable name="ChangeColorIconWithText">
+        <attr name="mode_chose"/>
+        <attr name="mode_change"/>
+        <attr name="image_default"/>
+        <attr name="image_chose"/>
+        <attr name="color_chose"/>
+        <attr name="text"/>
+        <attr name="text_size"/>
+    </declare-styleable>
+
+</resources>
